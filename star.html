@@ -1,0 +1,55 @@
+<svg viewBox="0 0 500 500" width="500" height="500">
+  <!-- 별 모양 외곽선 (10개 꼭짓점) -->
+  <path id="starPath" d="
+    M250,25 
+    L292.5,175 
+    L450,175 
+    L325,275 
+    L375,450 
+    L250,350 
+    L125,450 
+    L175,275 
+    L50,175 
+    L207.5,175 
+    Z" 
+    fill="none" stroke="#000000" stroke-width="1"/>
+
+  <!-- 꼭짓점에 고정된 작은 점들 -->
+  <circle cx="250" cy="25" r="3" fill="#000000"/>
+  <circle cx="292.5" cy="175" r="3" fill="000000"/>
+  <circle cx="450" cy="175" r="3" fill="#000000"/>
+  <circle cx="325" cy="275" r="3" fill="#000000"/>
+  <circle cx="375" cy="450" r="3" fill="#000000"/>
+  <circle cx="250" cy="350" r="3" fill="#000000"/>
+  <circle cx="125" cy="450" r="3" fill="#000000"/>
+  <circle cx="175" cy="275" r="3" fill="#000000"/>
+  <circle cx="50" cy="175" r="3" fill="#00000"/>
+  <circle cx="207.5" cy="175" r="3" fill="#000000"/>
+
+  <!-- 움직이는 점 -->
+  <circle r="7" fill="#000000">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" begin="0s">
+      <mpath href="#starPath"/>
+    </animateMotion>
+  </circle>
+  <circle r="7" fill="#000000">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" begin="1.4s">
+      <mpath href="#starPath"/>
+    </animateMotion>
+  </circle>
+  <circle r="7" fill="#000000">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" begin="2.8s">
+      <mpath href="#starPath"/>
+    </animateMotion>
+  </circle>
+  <circle r="7" fill="#000000">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" begin="4.2s">
+      <mpath href="#starPath"/>
+    </animateMotion>
+  </circle>
+  <circle r="7" fill="#000000">
+    <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" begin="5.6s">
+      <mpath href="#starPath"/>
+    </animateMotion>
+  </circle>
+</svg>
